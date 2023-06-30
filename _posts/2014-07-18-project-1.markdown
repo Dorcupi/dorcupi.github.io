@@ -2,7 +2,7 @@
 layout: default
 modal-id: 1
 date: 2023-07-02
-img: elementalSuit.png
+img: cabin.png
 alt: image-alt
 project-date: July 2023
 client: Start Bootstrap

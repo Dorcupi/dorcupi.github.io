@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Elemental Suits
 modal-id: 1
 date: 2023-07-2
 img: elementalSuit.png

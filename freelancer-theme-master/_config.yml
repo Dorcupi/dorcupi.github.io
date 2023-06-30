@@ -1,11 +1,12 @@
 # Site settings
-title: Freelancer
-email: your-email@domain.com
-url: https://github.com/jeromelachaud/freelancer-theme
+title: Home - Dorcupi
+email: dorcupi@gmail.com
+url: https://dorcupi.github.io/
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 keywords: "your keywords, separated by commas"
-skills: "Web Developer - Graphic Artist - User Experience Designer"
-meta_author: LastName FirstName
+skills: "Minecraft Datapack Developer - Graphic Designer - YouTuber"
+meta_author: Ejiogu Divine
+remote_theme: freelancer
 
 # Google webmaster tools
 google_verify:
@@ -40,15 +41,15 @@ footer:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
+    url: http://twitter.com/Dorcupi
   - title: facebook
     url:
   - title: stack-overflow
     url: http://stackoverflow.com/questions/tagged/jekyll
   - title: bitbucket
-    url: http://bitbucket.org/jekyll
+    url: 
   - title: github
-    url: http://github.com/jekyll
+    url: http://github.com/Dorcupi
 
 # Postal address (add as many lines as necessary)
 address:

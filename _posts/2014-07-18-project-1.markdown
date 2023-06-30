@@ -3,7 +3,7 @@ layout: default
 title: Elemental Suits
 modal-id: 1
 date: 2023-07-2
-img: elementalSuit.jpg
+img: elementalSuit.png
 alt: previewImage
 project-date: July 2023
 link: https://github.com/Dorcupi/ElementalSuits

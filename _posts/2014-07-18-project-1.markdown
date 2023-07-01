@@ -7,6 +7,7 @@ img: elementalSuit.png
 alt: image-alt
 project-date: July 2023
 link: https://github.com/Dorcupi/ElementalSuits
+linkName: Download
 client: Start Bootstrap
 category: Minecraft Datapack
 description: Elemental Suits is a Minecraft datapack developed by Dorcupi where you become powerful enough to element bend. By using suits, you gain new abilites depending on what suit you use. Using complex combinations of different armor pieces, you can become the most powerful player in Minecraft.

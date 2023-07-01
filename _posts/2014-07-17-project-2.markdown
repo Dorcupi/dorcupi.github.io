@@ -7,6 +7,7 @@ alt: image-alt
 title: A.A.P.I.C
 project-date: January 2023
 link:
+linkName: Check Out
 client: Start Bootstrap
 category: Website
 description: As work to become less bored and to make something that he could learn from, Dorcupi started A.A.P.I.C (An Amazing Arrogantactive API Collection). It showcases a few unique API's for people around the world to learn about.

@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Elemental Suits
 modal-id: 1
 date: 2014-07-17
 img: elementalSuit.png

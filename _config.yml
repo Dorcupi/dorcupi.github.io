@@ -34,19 +34,19 @@ color:
 # Footer settings
 footer:
   copyright: Dorcupi
-  location: 
+  location: Emails
   social: Around the Web
   credits: Credits
 
 address:
-  - 
+  - dorcupi@gmail.com
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
     url: http://twitter.com/Dorcupi
   - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
+    url: http://stackoverflow.com/users/19327109/divydivine
   - title: github
     url: http://github.com/Dorcupi 
 

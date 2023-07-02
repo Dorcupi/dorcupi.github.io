@@ -32,11 +32,9 @@
               {% endif %}
             </ul>
             {% if post.link %}
-            <form action='{{ post.link }}' target="_blank">
-              <button type="button" class="btn btn-default" ><i class="fa fa-download"></i>
-                {{ post.linkName }}
-              </button>
-            </form>
+            <button type="button" onclick="window.open('{{ post.link }}','_blank')" class="btn btn-default" ><i class="fa fa-download"></i>
+              {{ post.linkName }}
+            </button>
             {% endif %}
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
               Close</button>

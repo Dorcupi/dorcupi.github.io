@@ -1,6 +1,7 @@
 ---
 layout: default
 modal-id: 3
+title: Skinify
 date: 2014-07-16
 img: skinify.png
 alt: image-alt

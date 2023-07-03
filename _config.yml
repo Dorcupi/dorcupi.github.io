@@ -1,5 +1,5 @@
 # Site settings
-title: Dorcupi
+title: I'm Dorcupi
 email: dorcupi@gmail.com
 url: https://dorcupi.github.io/
 description: "Where someone's insane mind, spits out random stuff."
@@ -48,7 +48,7 @@ social:
   - title: stack-overflow
     url: http://stackoverflow.com/users/19327109/divydivine
   - title: github
-    url: http://github.com/Dorcupi 
+    url: http://github.com/Dorcupi
 
 # Credits content
 credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'

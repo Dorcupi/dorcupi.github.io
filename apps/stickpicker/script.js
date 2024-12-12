@@ -12,22 +12,26 @@ window.addEventListener('load', () => {
 
 // Add event listeners
 document.getElementById('create-config').addEventListener('click', () => {
-    const category = showPrompt("Add Category","Enter a category name:");
-    if (category) {
-        const initialSticks = parseInt(showPrompt("Add Category",`Enter initial sticks for ${category}:`));
-        const refillSticks = parseInt(showPrompt("Add Category",`Enter refill sticks for ${category}:`));
-
-        if (!isNaN(initialSticks) && !isNaN(refillSticks)) {
-            config[category] = { refill: refillSticks, locked: false };
-            data[category] = initialSticks;
-            saveData();
-            enableButtons();
-            hideCreateConfig();
-            showAlert("Info", `Category "${category}" created with ${initialSticks} sticks.`);
+    showPrompt('Add Category', 'Enter a new category name:', (category) => {
+        if (!config[category]) {
+            showPrompt('Add Category', `Enter initial sticks for ${category}:`, (initialSticks) => {
+                showPrompt('Add Category', `Enter refill sticks for ${category}:`, (refillSticks) => {
+                    if (!isNaN(initialSticks) && !isNaN(refillSticks)) {
+                        config[category] = { refill: parseInt(refillSticks, 10), locked: false };
+                        data[category] = parseInt(initialSticks, 10);
+                        saveData();
+                        enableButtons();
+                        hideCreateConfig();
+                        showAlert('Info', `Category "${category}" added.`);
+                    } else {
+                        showAlert('Error', 'Invalid input. Try again.');
+                    }
+                });
+            });
         } else {
-            showAlert("Error", "Invalid input. Try again.");
+            showAlert('Error', 'Category already exists.');
         }
-    }
+    });
 });
 
 document.getElementById('pick-stick').addEventListener('click', () => {

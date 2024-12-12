@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick Picker App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Stick Picker App</h1>
+        <button id="create-config">Create Config</button>
+        <button id="pick-stick" disabled>Pick a Stick</button>
+        <button id="undo-pick" disabled>Undo Last Pick</button>
+        <button id="add-category" disabled>Add Category</button>
+        <button id="remove-category" disabled>Remove Category</button>
+        <button id="edit-category" disabled>Edit Category</button>
+        <button id="lock-category" disabled>Lock/Unlock Category</button>
+        <button id="show-categories" disabled>Show Categories</button>
+        <button id="export-config" disabled>Export Config</button>
+        <button id="import-config">Import Config</button>
+        <button id="reset-config" disabled>Reset Config</button>
+        <button id="help">Help</button>
+    </div>
+    <script src="script.js"></script>
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="modal-title"></h2>
+            <p id="modal-message"></p>
+            <div id="modal-input-container" class="hidden">
+                <input id="modal-input" type="text" />
+            </div>
+            <div id="modal-buttons">
+                <button id="modal-confirm">OK</button>
+                <button id="modal-cancel" class="hidden">Cancel</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -3,107 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dorcupi - YouTuber & Minecraft Datapack Developer</title>
+    <title>Divine's Apps</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #77FED4;
-            color: #FFFFFF;
             margin: 0;
-            padding: 20px; /* Add padding to the body */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; /* Ensure full viewport height */
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
             text-align: center;
         }
-        .container {
-            background-color: #3CBCB2;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
-            width: 90%;
-            margin-top: 20px; /* Add margin to the top of the container */
-            margin-bottom: 20px; /* Add margin to the bottom of the container */
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
         }
+
         h1 {
-            color: #178F99; /* Updated color for better readability */
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            margin: 0;
         }
-        .logo-container {
-            margin-bottom: 20px;
+
+        main {
+            padding: 2em;
         }
-        .logo {
-            border-radius: 50%;
-            width: 150px; /* Adjust size as needed */
-            height: 150px; /* Adjust size as needed */
-            overflow: hidden; /* Ensures image stays within circle */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
-        }
-        .button {
-            background-color: #007388;
-            color: #FFFFFF;
-            padding: 10px 20px;
+
+        .app-button {
+            display: inline-block;
+            margin: 1em;
+            padding: 1em 2em;
+            font-size: 1.2em;
+            color: white;
+            background-color: #007BFF;
             border: none;
             border-radius: 5px;
-            font-size: 1em;
             text-decoration: none;
             cursor: pointer;
-            margin-top: 20px; /* Space between text and button */
-            display: inline-block; /* Display as inline block to stay within container */
+            transition: background-color 0.3s;
         }
-        .button:hover {
-            background-color: #0B587C;
+
+        .app-button:hover {
+            background-color: #0056b3;
         }
-        p {
-            color: #FFFFFF;
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 15px; /* Added margin to bottom */
-        }
-        a {
-            color: #007388;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .playlist-container {
-            margin-top: 20px;
-            max-width: 100%; /* Adjust as needed */
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 1em 0;
+            position: fixed;
             width: 100%;
-        }
-        .playlist-container iframe {
-            width: 100%; /* Make iframe responsive */
-            max-width: 400px; /* Limit maximum width */
-            height: 225px; /* Adjust height as needed */
-            border: none;
-            border-radius: 10px;
-            overflow: hidden;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo-container">
-            <img src="https://yt3.googleusercontent.com/-IDEWaQyyutE5sHOb_BQmEJzH6yX2OYbydGwfcrj9zAWoVmhKUMTBgpDi5oA9Y-tfDyubV_z=s176-c-k-c0x00ffffff-no-rj" alt="Dorcupi Logo" class="logo">
-        </div>
-        <h1>Dorcupi</h1>
-        <p>Heysa! I'm Dorcupi. I am a YouTuber and Minecraft datapack developer passionate about creating unique gaming experiences.</p>
-        <p>I spend most of my time making datapacks and sharing them on <a href="https://www.youtube.com/channel/UC-hPZ4uxUYeEVuOyiJMiB4Q/" target="_blank">YouTube</a> where I showcase my latest creations since 2023.</p>
-        <p>You can find my datapacks on <a href="https://modrinth.com/user/DorcupiGames" target="_blank">Modrinth</a> for the Minecraft community.</p>
-        <a href="https://www.youtube.com/channel/UC-hPZ4uxUYeEVuOyiJMiB4Q/" target="_blank" class="button">Check Me Out</a>
+    <header>
+        <h1>Divine's Apps</h1>
+    </header>
+    <main>
+        <p>Welcome! Click on an app to explore it:</p>
+        <button class="app-button" onclick="openApp('igbolingo')">IgboLingo</button>
+        <button class="app-button" onclick="openApp('igbodict')">Igbo Dictionary</button>
+        <button class="app-button" onclick="openApp('stickpicker')">Stick Picker</button>
+    </main>
+    <footer>
+        &copy; 2024 Divine's Apps. All rights reserved.
+    </footer>
 
-        <!-- Heading for Newest Video -->
-        <h2>Newest Video</h2>
-        
-        <!-- Playlist Embed -->
-        <div class="playlist-container">
-            <iframe src="https://www.youtube.com/embed/videoseries?list=PLuFsYrlJYDgrmEHtDYJsvVC2_rzC5lUer" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
+    <script>
+        function openApp(app) {
+            switch (app) {
+                case 'igbolingo':
+                    alert('Redirecting to Igbo Language Learning App...');
+                    // Replace with your app's URL
+                    window.location.href = '/apps/igbolingo';
+                    break;
+                case 'igbodict':
+                    alert('Redirecting to Minecraft Datapacks...');
+                    // Replace with your app's URL
+                    window.location.href = '/apps/igbodict';
+                    break;
+                case 'stickpicker':
+                    alert('Redirecting to Custom Games...');
+                    // Replace with your app's URL
+                    window.location.href = '/apps/stickpicker';
+                    break;
+                default:
+                    alert('App not found!');
+            }
+        }
+    </script>
 </body>
 </html>

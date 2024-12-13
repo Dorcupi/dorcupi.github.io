@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - IgboLingo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>IgboLingo</h1>
+
+    <!-- Lesson Selection -->
+    <div id="lesson-selection">
+        <label for="lessons">Choose a lesson:</label>
+        <select id="lessons"></select>
+        <button id="start-lesson">Start Lesson</button>
+    </div>
+
+    <!-- Quiz Container -->
+    <div id="quiz-container" class="hidden">
+        <h2 id="current-topic"></h2>
+        <div id="question"></div>
+        <div id="options"></div>
+        <br>
+        <button id="next-question" class="hidden">Next Question</button>
+        <div class="feedback" id="feedback"></div>
+        <div class="streak" id="streak"></div>
+    </div>
+    <div id="result-container" class="hidden"></div>
+    <div id="dataexport-container">
+        <hr>
+        <div>
+            <label for="import-progress">Import Progress:</label>
+            <input type="file" id="import-progress" accept=".igl">
+        </div>
+        <button id="export-progress">Export Progress</button>
+        <button id="reset-progress">Reset Progress</button>
+    </div>
+    
+    
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

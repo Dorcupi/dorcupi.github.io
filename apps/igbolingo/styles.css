@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaf2f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 12px 24px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.quiz-container button {
+    display: block;
+    margin: 15px 0;
+}
+
+.feedback {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    color: #444;
+}
+
+.streak {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+#lesson-selection {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#quiz-container {
+    text-align: center;
+}
+
+#options button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+#options button:hover {
+    background-color: #f0f8ff;
+    color: #007bff;
+}
+
+.alert {
+    margin: 20px 0;
+    padding: 10px;
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 6px;
+}

@@ -12,16 +12,16 @@ window.addEventListener('load', () => {
 
 // Add event listeners
 document.getElementById('create-config').addEventListener('click', () => {
-    showPrompt('Add Category', 'Enter a new category name:', (category) => {
-        showPrompt('Add Category', `Enter initial sticks for ${category}:`, (initialSticks) => {
-            showPrompt('Add Category', `Enter refill sticks for ${category}:`, (refillSticks) => {
+    showPrompt('Create Config', 'Enter a new category name:', (category) => {
+        showPrompt('Create Config', `Enter initial sticks for ${category}:`, (initialSticks) => {
+            showPrompt('Create Config', `Enter refill sticks for ${category}:`, (refillSticks) => {
                 if (!isNaN(initialSticks) && !isNaN(refillSticks)) {
                     config[category] = { refill: parseInt(refillSticks, 10), locked: false };
                     data[category] = parseInt(initialSticks, 10);
                     saveData();
                     enableButtons();
                     hideCreateConfig();
-                    showAlert('Info', `Category "${category}" added.`);
+                    showAlert('Info', `Category "${category}" added. The config has been created.`);
                 } else {
                     showAlert('Error', 'Invalid input. Try again.');
                 }

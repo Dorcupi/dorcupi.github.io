@@ -282,4 +282,5 @@ resetProgressBtn.onclick = resetProgress;
 document.addEventListener('DOMContentLoaded', async () => {
     await loadWordDictionary(); // Load the dictionary first
     populateLessonDropdown();  // Then populate the dropdown
+    document.title = "Home - IgboLingo";
 });

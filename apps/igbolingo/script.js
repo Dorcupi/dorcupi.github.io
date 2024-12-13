@@ -84,6 +84,7 @@ function startLesson() {
     dataExportContainer.classList.add('hidden');
     quizContainer.classList.remove('hidden');
     currentTopic.textContent = `Topic: ${currentLesson.topic}`;
+    document.title = "Lesson - IgboLingo"
     showQuestion();
 }
 
@@ -216,6 +217,7 @@ function goHome() {
     resultContainer.classList.add('hidden');
     lessonSelection.classList.remove('hidden');
     dataExportContainer.classList.remove('hidden');
+    document.title = "Home - IgboLingo"
 }
 
 function resetProgress() {

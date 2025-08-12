@@ -14,6 +14,10 @@ function formatTime(seconds) {
     return `${m}:${s}`;
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    document.documentElement.setAttribute("data-theme", "light");
+});
+
 document.getElementById("themeToggle").addEventListener("click", () => {
   const html = document.documentElement;
   html.setAttribute("data-theme", html.getAttribute("data-theme") === "light" ? "dark" : "light");

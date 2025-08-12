@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countify</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Countify</h1>
+  <h3>A countdown/countup video generator</h3>
+  <div class="controls">
+    <label>Start Number <input id="startNumber" type="number" value="10" /></label>
+    <label>End Number <input id="endNumber" type="number" value="0" /></label>
+    <label>Duration (seconds) <input id="duration" type="number" value="10" /></label>
+    <label>Font
+      <select id="font">
+        <option value="Arial">Arial</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Impact">Impact</option>
+      </select>
+      <input type="file" id="fontUpload" accept=".ttf,.otf" />
+    </label>
+
+    <label>Text Color
+      <div class="param-row">
+        <input id="textColor" type="color" value="#ffffff" />
+        <button class="reset-btn" data-default="#ffffff">↺</button>
+      </div>
+    </label>
+
+    <label>Background Color
+      <div class="param-row">
+        <input id="bgColor" type="color" value="#000000" />
+        <button class="reset-btn" data-default="#000000">↺</button>
+      </div>
+    </label>
+
+    <label>Stroke Width
+      <div class="param-row">
+        <input id="strokeWidth" type="number" value="0" min="0" />
+        <button class="reset-btn" data-default="0">↺</button>
+      </div>
+    </label>
+
+    <label>Stroke Color
+      <div class="param-row">
+        <input id="strokeColor" type="color" value="#000000" />
+        <button class="reset-btn" data-default="#000000">↺</button>
+      </div>
+    </label>
+
+    <label>Text Size (px)
+      <div class="param-row">
+        <input id="textSizePx" type="number" value="360" />
+        <button class="reset-btn" data-default="360">↺</button>
+      </div>
+    </label>
+
+    <label>Text Size (%)
+      <div class="param-row">
+        <input id="textSizePercent" type="number" value="100" />
+        <button class="reset-btn" data-default="100">↺</button>
+      </div>
+    </label>
+
+    <label>Offset X (px)
+      <div class="param-row">
+        <input id="offsetX" type="number" value="0" />
+        <button class="reset-btn" data-default="0">↺</button>
+      </div>
+    </label>
+
+    <label>Offset Y (px)
+      <div class="param-row">
+        <input id="offsetY" type="number" value="0" />
+        <button class="reset-btn" data-default="0">↺</button>
+      </div>
+    </label>
+
+    <label><input id="timeMode" type="checkbox" /> Time Mode (mm:ss)</label>
+  </div>
+
+  <button id="generate">Generate Video</button>
+  <div id="status">Video generating...</div>
+  <canvas id="canvas" width="1920" height="1080"></canvas>
+  <video id="videoOutput" controls></video>
+
+  <script src="script.js"></script>
+</body>
+</html>

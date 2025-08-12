@@ -14,6 +14,12 @@ function formatTime(seconds) {
     return `${m}:${s}`;
 }
 
+document.getElementById("themeToggle").addEventListener("click", () => {
+  const html = document.documentElement;
+  html.setAttribute("data-theme", html.getAttribute("data-theme") === "light" ? "dark" : "light");
+});
+
+
 fontUpload.addEventListener('change', async (e) => {
     const file = e.target.files[0];
     if (file) {

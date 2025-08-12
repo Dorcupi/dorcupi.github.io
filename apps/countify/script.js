@@ -1,5 +1,5 @@
 const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
+const ctx = canvas.getContext('2d', { alpha: false });
 const videoOutput = document.getElementById('videoOutput');
 const statusEl = document.getElementById('status');
 const generateBtn = document.getElementById('generate');

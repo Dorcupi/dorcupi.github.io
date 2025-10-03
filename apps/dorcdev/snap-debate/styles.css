@@ -6,11 +6,9 @@
     --stroke-size: 10px;
     --scroll-speed: 25s;
     --image-opacity: 0.5;
-    --button-bg: rgba(50,50,50,0.5); /* Button background */
-    --button-radius: 4px;      /* Button roundness */
+    --button-bg: rgba(50,50,50,0.5);
+    --button-radius: 4px;
 }
-
-/* ====== Global Styles ====== */
 
 html {
   scroll-behavior: smooth;
@@ -24,28 +22,26 @@ body {
     background-color: var(--bg-color);
 }
 
-/* ====== Scrolling Image Overlay ====== */
 .scrolling-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('scroll.png'); /* Your transparent image */
+    background-image: url('scroll.png');
     background-repeat: repeat;
-    background-size: 500px 500px; /* Adjust tile size */
+    background-size: 500px 500px;
     opacity: var(--image-opacity);
-    pointer-events: none; /* So it doesn't block clicks */
+    pointer-events: none;
     z-index: 0;
     animation: scrollDiagonal var(--scroll-speed) linear infinite;
 }
 
 @keyframes scrollDiagonal {
     0% { background-position: 0 0; }
-    100% { background-position: -500px 500px; } /* Adjust for scroll distance */
+    100% { background-position: -500px 500px; }
 }
 
-/* ====== Content ====== */
 .content {
     position: relative;
     z-index: 2; /* Above scrolling image */
@@ -57,13 +53,13 @@ body {
 }
 
 .fade-in {
-    opacity: 0;              /* Start invisible */
-    animation: fadeInAnimation 0.5s forwards; /* Animate over 1.5s */
+    opacity: 0;
+    animation: fadeInAnimation 0.5s forwards;
 }
 
 @keyframes fadeInAnimation {
     to {
-        opacity: 1;          /* End fully visible */
+        opacity: 1;
     }
 }
 
@@ -91,6 +87,96 @@ p {
     line-height: 1.5em;
 }
 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  display: block;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides .active {
+    box-shadow: 0 10px 100px rgb(0, 0, 0);
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.captiontext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.galleryfade {
+  animation-name: galfade;
+  animation-duration: 1.5s;
+}
+
+@keyframes galfade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 .btn {
     display: inline-block;
     padding: 12px 25px;
@@ -114,19 +200,19 @@ p {
 }
 
 .footer {
-    background-color: #0B1E5B; /* Dark blue */
-    color: white;              /* White text */
+    background-color: #0B1E5B;
+    color: white;
     padding: 30px 20px;
     text-align: center;
     font-family: 'Dela Gothic One', sans-serif;
     font-size: 1em;
     box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
     position: relative;
-    z-index: 1; /* Make sure it's above the scrolling overlay */
+    z-index: 1;
 }
 
 .footer a {
-    color: #FFD700; /* Optional: gold-colored links */
+    color: #FFD700;
     text-decoration: none;
 }
 
@@ -135,13 +221,13 @@ p {
 }
 
 .halfcontainer {
-    display: flex;          /* Children sit next to each other */
-    flex-wrap: wrap;        /* Allow them to wrap to next line if needed */
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .half {
-    flex: 1 1 50%;          /* Grow and shrink, base width 50% */
+    flex: 1 1 50%;
     padding: 20px;
     box-sizing: border-box;
 }

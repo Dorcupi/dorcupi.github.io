@@ -86,6 +86,10 @@ p {
     margin-bottom: 15px;
 }
 
+small {
+    font-size: 0.7em;
+}
+
 a {
     color: #ffd000;
     text-decoration: none;

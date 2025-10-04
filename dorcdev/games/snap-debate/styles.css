@@ -99,9 +99,13 @@ p {
   display: none;
 }
 
-.mySlides .active {
-    box-shadow: 0 10px 100px rgb(0, 0, 0);
+.mySlides img {
+  width: 100%; 
+  display: block; 
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
+
 
 .prev, .next {
   cursor: pointer;
@@ -200,7 +204,7 @@ p {
 }
 
 .footer {
-    background-color: #0B1E5B;
+    background-image: linear-gradient(to bottom right, #1fd2fb, #a037fc);
     color: white;
     padding: 30px 20px;
     text-align: center;

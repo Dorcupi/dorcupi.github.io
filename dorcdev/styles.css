@@ -1,0 +1,99 @@
+@font-face {
+  font-family: daydream; /* set name */
+  src: url(daydream.otf); /* url of the font */
+}
+
+body {
+    font-family: 'Pixelify Sans';
+    color: white;
+    text-shadow: 0 1px 10px black;
+    overflow-x: hidden;
+    margin: 0;
+    background-image: linear-gradient(to bottom right, #1fd2fb, #a037fc);
+}
+
+.content {
+    position: relative;
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: daydream;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.568);
+}
+
+h1 { font-size: 4em; margin-bottom: 20px; }
+h2 { font-size: 2.5em; margin-bottom: 15px; }
+h3 { font-size: 1.8em; margin-bottom: 10px; }
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px 0;
+    font-size: 1em;
+    font-family: daydream;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    background-color: #471fb4;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #6b3ceb;
+    transform: scale(1.05);
+}
+
+.gamescontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.game {
+    flex: 1 1 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.gamethumbnail {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.footer {
+    background-image: linear-gradient(to bottom right, #1fd2fb, #a037fc);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Pixelify Sans';
+    font-size: 1em;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

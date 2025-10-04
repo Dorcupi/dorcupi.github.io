@@ -1,6 +1,7 @@
 let slideIndex = 1;
 
 window.onload = function() {
+    document.getElementsByClassName("deleteonload")
     showSlides(slideIndex);
 }
 

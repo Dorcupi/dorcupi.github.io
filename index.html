@@ -1,95 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divine's Apps</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            text-align: center;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1em 0;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        main {
-            padding: 2em;
-        }
-
-        .app-button {
-            display: inline-block;
-            margin: 1em;
-            padding: 1em 2em;
-            font-size: 1.2em;
-            color: white;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .app-button:hover {
-            background-color: #0056b3;
-        }
-
-        footer {
-            background-color: #222;
-            color: white;
-            padding: 1em 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>What are you looking for?</title>
+  <!-- Hacker-style monospace from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body>
-    <header>
-        <h1>Divine's Apps</h1>
-    </header>
-    <main>
-        <p>Welcome! Click on an app to explore it:</p>
-        <button class="app-button" onclick="openApp('igbolingo')">IgboLingo</button>
-        <button class="app-button" onclick="openApp('igbodict')">Igbo Dictionary</button>
-        <button class="app-button" onclick="openApp('stickpicker')">Stick Picker</button>
-        <button class="app-button" onclick="openApp('countify')">Countify</button>
-    </main>
-    <footer>
-        &copy; 2025 Divine Ejiogu [<a href="/apps/about">Dorcupi</a>]. All rights reserved.
-    </footer>
+  <canvas id="stars"></canvas>
+  <div class="stage" role="main">
+    <h1 class="title" aria-live="polite"></h1>
 
-    <script>
-        function openApp(app) {
-            switch (app) {
-                case 'igbolingo':
-                    window.location.href = '/apps/igbolingo';
-                    break;
-                case 'igbodict':
-                    window.location.href = '/apps/igbodict';
-                    break;
-                case 'stickpicker':
-                    window.location.href = '/apps/stickpicker';
-                    break;
-                case 'countify':
-                    window.location.href = '/apps/countify';
-                    break;
-                default:
-                    alert('App not found!');
-            }
-        }
-    </script>
+    <div class="options" aria-label="Choices">
+      <a class="option" href="/dorcupi" data-target="/dorcupi" tabindex="0">
+        <h2 aria-hidden="true"></h2>
+      </a>
+      <a class="option" href="/dorcdev" data-target="/dorcdev" tabindex="0">
+        <h2 aria-hidden="true"></h2>
+      </a>
+      <a class="option" href="/apps" data-target="/apps" tabindex="0">
+        <h2 aria-hidden="true"></h2>
+      </a>
+    </div>
+
+    <div class="hint">Click a name to visit</div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

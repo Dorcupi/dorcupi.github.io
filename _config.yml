@@ -21,7 +21,7 @@
 title: What are you looking for?
 email: dorcupi@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The website that holds all of my websites.
+  The hub of websites built by gamedev, game modder, and programmer, Divine Ejiogu.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dorcupi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Dorcupi
@@ -31,6 +31,7 @@ github_username:  dorcupi
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-mentions
   - jekyll-seo-tag
   - jekyll-sitemap
 

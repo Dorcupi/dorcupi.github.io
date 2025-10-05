@@ -1,22 +1,20 @@
+---
+permalink: /dorcdev/
+title: "DorcDev: Official Website"
+description: The official website of the gamedev that develops games as a gamedev, DorcDev.
+image: /dorcdev/dorcdevogthumbnail.png
+---
 <!DOCTYPE html>
 <HTML lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The official website of the gamedev that develops games as a gamedev.">
     <meta name="keywords" content="Godot, Indie Game, Gamedev, DorcDev">
     <title>DorcDev - Indie Game Developer</title>
     
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
-    <link rel="canonical" href="https://dorcupi.github.io/dorcdev/" />
-    <meta property="og:url" content="https://dorcupi.github.io/dorcdev/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="DorcDev: Official Website" />
-    <meta property="og:description" content="Check out the official website of indie gamedev, DorcDev." />
-    <meta property="og:image" content="https://dorcupi.github.io/dorcdev/dorcdevogthumbnail.png" />
-    <meta property="og:image:alt" content="The DorcDev logo" />
+    {% seo title=false %}
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="dorcdevlogonodorcdev.png">
 
@@ -24,16 +22,16 @@
 <body>
 
     <div class="content">
-        <img src="logo.png" alt="DorcDev logo" style=" width:90%">
-        <h4>A gamedev that develops games as a gamedev.</h4>
+        <img fetchpriority="high" src="logo.png" alt="DorcDev logo" style="width:90%; aspect-ratio: 640 / 151;">
+        <h4 role="presentation">A gamedev that develops games as a gamedev.</h4>
         <p><strong>Hey!</strong></p>
         <p>I'm DorcDev. I make games for fun and for others! Right now, I'm currently working on Celestial Rampage, my 90s themed top down roguelite shooter game in space!</p>
         <h2>Games</h2>
         <div class="gamescontainer">
             <div class="game">
                 <a href="games/snap-debate">
-                    <img class="gamethumbnail" src="gamethumbnails/snapdebate.png" alt="Snap Debate Thumbnail" style=" width:60%">
-                    <h4>Snap Debate</h4>
+                    <img class="gamethumbnail" src="gamethumbnails/snapdebate.png" alt="Snap Debate Thumbnail" style="width:60%; aspect-ratio: 63 / 50;">
+                    <h4 role="presentation">Snap Debate</h4>
                 </a>
                 <p>The chaotic party debate game where players face off in ridiculous debates.</p>
                 <a href="games/snap-debate">
@@ -41,32 +39,32 @@
                 </a>
             </div>
             <div class="game">
-                <a href="https://dorcdev.itch.io/tales-of-st-luke">
-                    <img class="gamethumbnail" src="gamethumbnails/talesofstluke.png" alt="Tales of St. Luke Thumbnail" style=" width:60%">
-                    <h4>Tales of St. Luke</h4>
+                <a target="_blank" rel="noopener" href="https://dorcdev.itch.io/tales-of-st-luke">
+                    <img class="gamethumbnail" src="gamethumbnails/talesofstluke.png" alt="Tales of St. Luke Thumbnail" style="width:60%; aspect-ratio: 63 / 50;">
+                    <h4 role="presentation">Tales of St. Luke</h4>
                 </a>
                 <p>St. Luke has finally made it to heaven! Or has he?</p>
-                <a href="https://dorcdev.itch.io/tales-of-st-luke">
+                <a target="_blank" rel="noopener" href="https://dorcdev.itch.io/tales-of-st-luke">
                     <button class="btn">Play</button>
                 </a>
             </div>
             <div class="game">
-                <a href="https://dorcdev.itch.io/minecraft-recipe-screenshotter">
-                    <img class="gamethumbnail" src="gamethumbnails/mrs.png" alt="Minecraft Recipe Screenshotter Thumbnail" style=" width:60%">
-                    <h4>Minecraft Recipe Screenshotter (MRS)</h4>
+                <a target="_blank" rel="noopener" href="https://dorcdev.itch.io/minecraft-recipe-screenshotter">
+                    <img class="gamethumbnail" src="gamethumbnails/mrs.png" alt="Minecraft Recipe Screenshotter Thumbnail" style="width:60%; aspect-ratio: 63 / 50;">
+                    <h4 role="presentation">Minecraft Recipe Screenshotter (MRS)</h4>
                 </a>
                 <p>A way to make screenshots of Minecraft recipes, whether they are in the game or not.</p>
-                <a href="https://dorcdev.itch.io/minecraft-recipe-screenshotter">
+                <a target="_blank" rel="noopener" href="https://dorcdev.itch.io/minecraft-recipe-screenshotter">
                     <button class="btn">Learn More</button>
                 </a>
             </div>
             <div class="game">
-                <a href="https://dorcdev.itch.io/quikclick">
-                    <img class="gamethumbnail" src="gamethumbnails/quikclick.png" alt="Quik-Click Thumbnail" style=" width:60%">
-                    <h4>Quik-Click</h4>
+                <a target="_blank" rel="noopener" href="https://dorcdev.itch.io/quikclick">
+                    <img class="gamethumbnail" src="gamethumbnails/quikclick.png" alt="Quik-Click Thumbnail" style="width:60%; aspect-ratio: 63 / 50;">
+                    <h4 role="presentation">Quik-Click</h4>
                 </a>
                 <p>Test your reaction speed in a newfast-paced way.</p>
-                <a href="https://dorcdev.itch.io/quikclick">
+                <a target="_blank" rel="noopener" href="https://dorcdev.itch.io/quikclick">
                     <button class="btn">Play</button>
                 </a>
             </div>
@@ -75,9 +73,9 @@
     <div class="footer">
         <p>© 2025 DorcDev. All Rights Reserved.</p>
         <p>Follow me: 
-            <a href="https://linktr.ee/DorcDev">Linktree</a> | 
-            <a href="https://instagram.com/dorcdev">Instagram</a> | 
-            <a href="https://www.youtube.com/@DorcDev">YouTube</a>
+            <a target="_blank" rel="noopener" href="https://linktr.ee/DorcDev">Linktree</a> | 
+            <a target="_blank" rel="noopener" href="https://instagram.com/dorcdev">Instagram</a> | 
+            <a target="_blank" rel="noopener" href="https://www.youtube.com/@DorcDev">YouTube</a>
         </p>
         <p><small><a href="/">What are you looking for?</a></small></p>
     </div>

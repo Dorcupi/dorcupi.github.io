@@ -1,25 +1,73 @@
 ---
 permalink: /404.html
-layout: page
 ---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>404 — Not Found</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#04020a;--star:#ffffff;--accent:#66ffcc}
+    html,body{height:100%;margin:0;background:var(--bg);font-family:'Share Tech Mono',monospace;color:var(--star)}
+    canvas{position:fixed;inset:0;z-index:0}
+    .wrap{position:relative;z-index:2;min-height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:24px;box-sizing:border-box;text-align:center}
+    h1{font-family:'Share Tech Mono',monospace;font-size:96px;margin:0;color:var(--accent);text-shadow:0 0 20px rgba(102,255,204,0.12)}
+    p{margin:16px 0 24px;font-size:20px;opacity:0.9}
+    a.button{display:inline-block;padding:12px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:var(--star);text-decoration:none;font-size:16px}
+    .muted{opacity:0.5;font-size:13px;margin-top:18px}
+    @media(max-width:600px){h1{font-size:56px}p{font-size:16px}}
+  </style>
+</head>
+<body>
+  <canvas id="stars"></canvas>
+  <div class="wrap" role="main">
+    <h1>404</h1>
+    <p>Looks like the page you're looking for doesn't exist.</p>
+    <a class="button" href="/">Return home</a>
+    <div class="muted">If you typed the URL, check for typos. Otherwise try the site menu.</div>
+  </div>
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+  <script>
+    // simple static starfield generated once — no animation, minimal complexity
+    (function(){
+      const c = document.getElementById('stars');
+      const ctx = c.getContext('2d');
+      const dpr = devicePixelRatio || 1;
+      function resize(){
+        c.width = innerWidth * dpr;
+        c.height = innerHeight * dpr;
+        c.style.width = innerWidth + 'px';
+        c.style.height = innerHeight + 'px';
+        drawStars();
+      }
+      function drawStars(){
+        const w = c.width, h = c.height;
+        ctx.clearRect(0,0,w,h);
+        // subtle gradient background
+        const g = ctx.createLinearGradient(0,0,0,h);
+        g.addColorStop(0,'rgba(4,2,10,1)');
+        g.addColorStop(1,'rgba(2,4,8,1)');
+        ctx.fillStyle = g;
+        ctx.fillRect(0,0,w,h);
+        const count = Math.floor((innerWidth+innerHeight)/6);
+        for(let i=0;i<count;i++){
+          const x = Math.random()*w;
+          const y = Math.random()*h;
+          const r = Math.random()*1.6*dpr + 0.2;
+          const a = 0.2 + Math.random()*0.9;
+          ctx.beginPath();
+          ctx.globalAlpha = a;
+          ctx.fillStyle = '#fff';
+          ctx.arc(x,y,r,0,Math.PI*2);
+          ctx.fill();
+        }
+        ctx.globalAlpha = 1;
+      }
+      addEventListener('resize', resize);
+      resize();
+    })();
+  </script>
+</body>
+</html>
